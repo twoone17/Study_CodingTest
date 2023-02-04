@@ -30,6 +30,8 @@ for i in range(N):
     else:
         dict[input] = 1
 
-a = sorted(dict.items(),key = lambda x:x[1],reverse=True)
+print(dict)
+
+a = sorted(dict.items(),key = lambda x:{x[1],-x[0]},reverse=True)
 
 print(a[0][0])
