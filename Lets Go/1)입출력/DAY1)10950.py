@@ -8,3 +8,7 @@ for i in range(T):
 
 for x in data:
     print(x)
+
+
+
+
