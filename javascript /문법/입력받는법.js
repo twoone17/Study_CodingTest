@@ -1,5 +1,8 @@
 const fs = require('fs');
 const input = fs.readFileSync('../test.txt').toString().split(' ');
+//백준에서 입력 방식
+const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+
 const a = input[0]
 console.log(a)
 
