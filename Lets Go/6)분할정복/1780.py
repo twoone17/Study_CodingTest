@@ -10,6 +10,8 @@ for i in range(N):
 def divide(row,col,N):
     curr = arr[row][col]
 
+
+
     for i in range(row,row + N):
         for j in range(col,col + N):
             if arr[i][j] != curr:
@@ -25,5 +27,7 @@ def divide(row,col,N):
                 divide(row+2*next_n,col+next_n,next_n)
                 divide(row+2*next_n,col+2*next_n,next_n)
                 return
+
+
 
 
