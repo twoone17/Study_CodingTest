@@ -11,6 +11,7 @@ for(let i =1;i<=N;i++)
     basket.push(i);
 }
 
+
 for(let q = 1 ;q<=M;q++)
 {
     let [i,j,k] = input[q].split(' ').map(item=>parseInt(item));
