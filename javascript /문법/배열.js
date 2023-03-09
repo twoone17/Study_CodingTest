@@ -271,3 +271,11 @@ items.sort(function(a,b){
 })
 
 console.log(items)
+
+/**
+ * array.fill : 3개의 매개변수를 사용할수 있다 1. 채울 value값 2. 시작하는 index값 3. 끝나는 index값 (end뺴고)
+ */
+
+array = [1,2,3,4,5];
+console.log(array.fill(999,3,4));
+console.log(array.fill(999,2))
