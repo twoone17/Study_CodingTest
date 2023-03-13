@@ -67,10 +67,10 @@ console.log(fruits)
 /**
  * concat을 사용하면 배열을 합친다
  */
-
+console.log('------------concat-----------------')
 let array1 = ['a','b','c'];
 let array2 = ['d','e','f'];
-let concatArray = array1.concat(array2);
+let concatArray = array1.concat(['1'],array2);
 console.log(concatArray)
 
 /**
@@ -165,7 +165,7 @@ arr= [1,2,3,4,5];
 console.log(arr.join('  --  '))
 
 /**
- * arr.map : 배열 내의 모든 요소 가각에 대해 주어진 함수를 호출한 결과를 반환
+ * arr.map : 배열 내의 모든 요소 각각에 대해 주어진 함수를 호출한 결과를 반환
  */
 
 arr = [1,2,3,4,5];
@@ -279,3 +279,27 @@ console.log(items)
 array = [1,2,3,4,5];
 console.log(array.fill(999,3,4));
 console.log(array.fill(999,2))
+
+
+//문자열 정렬은 return a-b를 하는게 아닌 1, -1 , 0을 반환하는 식으로 구현을 해야한다
+
+let input2 = ['a','c','c','d','b','c','a','a']
+input2.sort(function(a,b)
+{
+    if(a > b)
+    {
+        return 1
+    }
+    else if(a < b)
+    {
+        return -1
+    }
+    else {
+        return 0;
+    }
+})
+
+console.log(input2)
+
+
+//slice 1로 하면 모든 array를 index부터 다 받을수있다 !!
