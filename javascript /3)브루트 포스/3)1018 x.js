@@ -1,3 +1,6 @@
+/**
+ * x
+ */
 const fs =require('fs');
 let input =fs.readFileSync('../test.txt').toString().split('\n');
 // let input =fs.readFileSync('dev/stdin').toString().trim().split('\n').map(item=>item.split(' ').map(item=>+item));
