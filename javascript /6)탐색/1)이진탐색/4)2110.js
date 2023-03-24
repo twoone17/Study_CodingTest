@@ -1,3 +1,10 @@
+/**
+ * 입력값이 많다면 이분탐색을 사용할 확률이 높다
+ *
+ * 기준을 명확히 잡는게 중요
+ *
+ */
+
 const fs = require('fs');
 let input = fs.readFileSync('../../test.txt').toString().trim().split('\n').map(item=>item.split(' ').map(item=>+item));
 // let input = fs.readFileSync('dev/stdin').toString().trim().split('\n').map(item=>item.split(' ').map(item=>+item));
