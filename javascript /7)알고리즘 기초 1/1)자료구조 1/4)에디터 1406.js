@@ -1,6 +1,6 @@
 const fs = require('fs');
-// let inputs = fs.readFileSync('../../test.txt').toString().split('\n')
-const inputs = fs.readFileSync('dev/stdin').toString().split('\n')
+let inputs = fs.readFileSync('../../test.txt').toString().split('\n')
+// const inputs = fs.readFileSync('dev/stdin').toString().split('\n')
 input = inputs.shift().split('')
 input.push('')
 
