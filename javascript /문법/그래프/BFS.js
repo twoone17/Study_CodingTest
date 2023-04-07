@@ -23,7 +23,7 @@ function bfs(graph,startVertex){
     {
         //큐에서 노드 하나를 꺼냄
         const currentVertex = queue.shift();
-        //꺼낸 노드의 인접 노드들을 가져온다(인접행렬로 선언해주었기 때문에 가능)
+        //꺼낸 노드의 인접 노드들을 가져온다(인접리스트로 선언해주었기 때문에 가능)
         const neighbors = graph[currentVertex];
 
         for(let i = 0; i< neighbors.length;i++)
