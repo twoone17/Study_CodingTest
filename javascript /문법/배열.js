@@ -303,3 +303,5 @@ console.log(input2)
 
 
 //slice 1로 하면 모든 array를 index부터 다 받을수있다 !!
+
+let answer = Array.from({ length: N }, () => -1);
