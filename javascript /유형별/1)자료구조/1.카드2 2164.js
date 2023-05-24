@@ -12,3 +12,5 @@ while(stack.length !=1)
 }
 
 console.log(Number(stack))
+
+
