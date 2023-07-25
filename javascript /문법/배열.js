@@ -214,7 +214,7 @@ console.log('-------------------------')
  * array.sort() : 소팅
  * 와 javascript는 알아서 정렬 안해주네 ㅅㅂㅋㅋㅋㅋㅋㅋ
  */
-
+//
 array1 = [1, 30, 4, 21, 100000];
 array1.sort(function compare(a,b){
     return a-b;
