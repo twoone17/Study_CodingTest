@@ -27,12 +27,14 @@ function dfs(graph,startVertex)
     {
         //queue 맨 앞에 있는게 탐색할 vertex
         let currentVertex = needVisit.shift()
+        console.log(needVisit)
         //방문하지 않았다면
         if(visited[currentVertex] != true)
         {
             //방문했다고 변경
             visited[currentVertex] = true
             //인접 노드부터 탐색할 수 있게 앞에 넣고, 뒤에 needVisit를 넣는다 (DFS)
+            // console.log(needVisit)
             needVisit = [...graph[currentVertex],...needVisit]
 
         }
