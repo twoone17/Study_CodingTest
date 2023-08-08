@@ -12,8 +12,19 @@ const graph = {
     J: ['I']
 };
 
-function dfs(graph,startVertex)
+let visited = {}
+let result = []
+function dfs(graph,vertex)
 {
-    let visited = {}
-
+    visited[vertex] = true
+    result.push(vertex)
+    graph[vertex].forEach(item=>{
+        if(visited[item] != true)
+        {
+            dfs(graph,item)
+        }
+    })
 }
+
+console.log(dfs(graph,"A"))
+console.log(result)
