@@ -32,7 +32,7 @@ function bfs(startVertex)
     //방문할 노드가 없을때까지
     while(needVisit.length)
     {
-        //bfs이니까 맨 앞에있는것부터 너비 탐색 shift로 빼주기
+        //bfs이니까 맨 앞에있는것부터 너비 탐킹색 shift로 빼주기
         let currentVertex = needVisit.shift()
         //탐색하는 노드에 연결되어있는 인접리스트를 탐색
             adjList[currentVertex].forEach(vertex=>{
