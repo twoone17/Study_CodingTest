@@ -21,7 +21,8 @@ function selectionSort(arr)
             arr[i] = arr[minIndex]
             arr[minIndex] = temp
 
-ㅍ    }
+        }
+    }
     return arr
 }
 
