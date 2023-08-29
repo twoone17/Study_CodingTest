@@ -25,8 +25,6 @@ function checkTrue(x,y)
                 check[x + i][y + i] = true
         }
 
-
-
 }
 
 for(let x = 0; x<N;x++)

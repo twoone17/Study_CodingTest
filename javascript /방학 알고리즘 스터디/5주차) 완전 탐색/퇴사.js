@@ -7,19 +7,13 @@ function dfs(time)
 {
     //n일의 time만큼 더해주기
     let price = 0
-    while(time>=7)
-    {
-        if(time-1 >= N)
-        {
-            return
-        }
+
         let currentVertex = input[time-1]
-        price = price + currentVertex[1]
+        const profitIfTaken = currentVertex[1] + dfs(time + currentVertex[1]);
+        const profitIfSkipped = dfs(time + 1);
 
-        dfs(time + currentVertex[0])
+        return Math.max(profitIfTaken,profitIfSkipped)
 
-    }
-    return time
 }
 
 console.log(dfs(0))
